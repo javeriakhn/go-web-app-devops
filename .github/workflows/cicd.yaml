@@ -91,6 +91,7 @@ jobs:
         git config --global user.name "javeriakhn"
         git add helm/go-web-app-chart/values.yaml
         git commit -m "Update tag in Helm chart"
+        git pull --rebase origin main  # Pull the latest changes with rebase
         git push
 
 
